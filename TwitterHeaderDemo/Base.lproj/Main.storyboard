@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YLH-6U-W8g">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="600" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3LZ-VW-cNi" userLabel="Header">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="107"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ColaBean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiI-c1-f7s">
+                                        <rect key="frame" x="261" y="105" width="78" height="20.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="0j7-wq-f8F"/>
+                                    <constraint firstItem="hiI-c1-f7s" firstAttribute="centerX" secondItem="3LZ-VW-cNi" secondAttribute="centerX" id="qB9-7i-Qhy"/>
+                                    <constraint firstItem="hiI-c1-f7s" firstAttribute="top" secondItem="3LZ-VW-cNi" secondAttribute="top" constant="105" id="qa0-hv-Vnc"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5O-6g-eoJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="736"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="jJu-0X-M4s" userLabel="AvatarImage" customClass="AvatarImageView">
+                                        <rect key="frame" x="8" y="79" width="69" height="69"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ColaBean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVd-xp-TJ6">
+                                        <rect key="frame" x="8" y="156" width="127" height="22"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yj6-3r-5nd" customClass="TWTButton">
+                                        <rect key="frame" x="491" y="118" width="101" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Ca3-o4-lpz"/>
+                                            <constraint firstAttribute="width" constant="101" id="oEe-w5-PN2"/>
+                                        </constraints>
+                                        <state key="normal" title="Follow">
+                                            <color key="titleColor" red="0.2901960784" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@Twittername" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfc-Bd-Shk">
+                                        <rect key="frame" x="8" y="177" width="111" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.039215686270000001" green="0.43921568630000002" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="love" translatesAutoresizingMaskIntoConstraints="NO" id="gzO-Kk-ALl" userLabel="Love">
+                                        <rect key="frame" x="284" y="404" width="32" height="32"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zct-ul-XHZ" userLabel="Sizer">
+                                        <rect key="frame" x="0.0" y="477" width="600" height="287"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="287" id="g4Q-Hv-IFz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Zct-ul-XHZ" secondAttribute="bottom" constant="37" id="18Z-41-M3H"/>
+                                    <constraint firstItem="Zct-ul-XHZ" firstAttribute="leading" secondItem="q5O-6g-eoJ" secondAttribute="leading" id="5sI-JJ-YaT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zct-ul-XHZ" secondAttribute="trailing" id="D1k-2Z-Sf5"/>
+                                    <constraint firstItem="gzO-Kk-ALl" firstAttribute="top" secondItem="q5O-6g-eoJ" secondAttribute="top" constant="404" id="MEJ-wE-wRr"/>
+                                    <constraint firstItem="Zct-ul-XHZ" firstAttribute="top" secondItem="q5O-6g-eoJ" secondAttribute="top" constant="477" id="iNB-y8-3c0"/>
+                                    <constraint firstAttribute="trailing" secondItem="yj6-3r-5nd" secondAttribute="trailing" constant="8" id="iU5-eD-DiG"/>
+                                    <constraint firstItem="yj6-3r-5nd" firstAttribute="top" secondItem="q5O-6g-eoJ" secondAttribute="top" constant="118" id="ruc-lj-OF9"/>
+                                    <constraint firstItem="gzO-Kk-ALl" firstAttribute="centerX" secondItem="q5O-6g-eoJ" secondAttribute="centerX" id="tgG-r1-hbU"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="TR7-Yw-ZNU"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q5O-6g-eoJ" secondAttribute="bottom" id="3yC-0t-Aky"/>
+                            <constraint firstAttribute="trailing" secondItem="3LZ-VW-cNi" secondAttribute="trailing" id="9Jg-kF-iCY"/>
+                            <constraint firstItem="3LZ-VW-cNi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KHe-D9-gsx"/>
+                            <constraint firstItem="q5O-6g-eoJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OZe-ej-66s"/>
+                            <constraint firstAttribute="trailing" secondItem="q5O-6g-eoJ" secondAttribute="trailing" id="RQm-ts-xGL"/>
+                            <constraint firstItem="q5O-6g-eoJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UYM-p8-6bA"/>
+                            <constraint firstItem="Zct-ul-XHZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="cyM-YG-jur"/>
+                            <constraint firstItem="3LZ-VW-cNi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uXx-9M-02m"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FAG-pa-YCV"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="800"/>
+                    <connections>
+                        <outlet property="avatarImage" destination="jJu-0X-M4s" id="oMO-kA-qOD"/>
+                        <outlet property="header" destination="3LZ-VW-cNi" id="3z6-bu-xQ0"/>
+                        <outlet property="headerLabel" destination="hiI-c1-f7s" id="Ulm-5G-SWp"/>
+                        <outlet property="scrollView" destination="q5O-6g-eoJ" id="nd6-HK-8oh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="374"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GoW-Kb-PiL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YLH-6U-W8g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" translucent="NO" id="nf3-zY-wnr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JTv-iS-s61"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICP-SN-waL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285" y="374"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="love" width="32" height="32"/>
+        <image name="profile" width="175" height="175"/>
+    </resources>
+</document>
