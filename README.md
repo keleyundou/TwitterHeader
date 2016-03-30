@@ -9,7 +9,7 @@
 </div>
 
 
-> 详细讲解请见：[Colabean](http://keleyundou.github.io/)
+> 详细讲解请见：[Colabean](http://keleyundou.github.io/2016/03/30/实现Twitter-UI效果/)
 
 > 原文:[IMPLEMENTING THE TWITTER IOS APP UI](http://www.thinkandbuild.it/implementing-the-twitter-ios-app-ui/)
 
